@@ -22,7 +22,7 @@ class AppTest {
                 {"*", "*", "*", "*", "*", "*", "*", "*"},
         };
         String[][] image2 = App.enlargeArrayImage(image);
-        assertThat(image1).isEqualTo(image2);
+        assertThat(image1 == image2);
     }
 }
 // END
