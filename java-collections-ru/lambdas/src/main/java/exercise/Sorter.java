@@ -14,7 +14,7 @@ class Sorter{
                 .filter(name -> name.get("gender").equals("male"))
        //         .map(name -> name)
                 .sorted(Comparator.comparing((name -> LocalDate.parse(name.get("birthday")))))
-                .map(name -> name.get(name))
+                .map(name -> name.get("name"))
                 .collect(Collectors.toList());
     }
 }
